@@ -25,7 +25,7 @@ namespace kickstart
             // In production, the React files will be served from this directory
             services.AddSpaStaticFiles(configuration =>
             {
-                configuration.RootPath = "ClientApp/build";
+                configuration.RootPath = "admin-app/build";
             });
         }
 
@@ -56,7 +56,7 @@ namespace kickstart
 
             app.UseSpa(spa =>
             {
-                spa.Options.SourcePath = "ClientApp";
+                spa.Options.SourcePath = "admin-app";
 
                 if (env.IsDevelopment())
                 {
